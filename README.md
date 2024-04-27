@@ -5,11 +5,16 @@
 3. Connect to the EC2 instance using PuTTY.
 4. Within the EC2 instance, install node and git with the following command.
 ```sudo yum install node git```
-5. Install Docker in the EC2 instance with the following commands:
+5. Install, configure and start Docker in the EC2 instance with the following commands:
 ```
-sudo yum install -y yum-utils
-sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo yum install docker
+sudo usermod -a -G docker ec2-user
+newgrp docker
+sudo systemctl start docker
 ```
-6. Start Docker
-```sudo systemctl start docker```
+6. Clone the docker-demo repository and enter the folder
+```
+git clone https://github.com/vincesagum/docker-demo.git
+cd docker-demo
+```
+7.

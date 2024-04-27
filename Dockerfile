@@ -1,9 +1,9 @@
 FROM node:alpine
 
-WORKDIR app
+WORKDIR /app
 
-COPY package.json package
-COPY package-lock.json package-lock.json
+COPY app/package.json package.json
+COPY app/package-lock.json package-lock.json
 
 RUN npm install
 
