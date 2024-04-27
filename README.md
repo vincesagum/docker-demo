@@ -17,4 +17,12 @@ sudo systemctl start docker
 git clone https://github.com/vincesagum/docker-demo.git
 cd docker-demo
 ```
-7.
+7. Build the Docker image
+```
+docker build -t docker-node-demo .
+```
+8. Run the Docker image
+```
+docker run docker-node-demo
+```
+9. Visit the webpage on your local browser!
