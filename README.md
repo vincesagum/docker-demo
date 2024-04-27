@@ -23,6 +23,6 @@ docker build -t docker-node-demo .
 ```
 8. Run the Docker image
 ```
-docker run docker-node-demo
+docker run -p 3000:3000 docker-node-demo
 ```
 9. Visit the webpage on your local browser!

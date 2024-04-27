@@ -9,4 +9,6 @@ RUN npm install
 
 COPY . . 
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "app.js" ]
+
+EXPOSE 3000
